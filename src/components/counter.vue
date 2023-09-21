@@ -1,12 +1,14 @@
-<script>
-export default {
+<script setup>
+import { ref } from 'vue'
 
-}
+defineProps({
+  msg: String
+})
+
+const count = ref(0)
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
-
   <div class="card">
     <h1>La mia prima APP con Vite ☝</h1>
     <button type="button" @click="count++">Clicca sul mio Contatore {{ count }}</button>
